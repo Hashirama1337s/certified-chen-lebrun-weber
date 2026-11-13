@@ -2,6 +2,9 @@
 
 Moki & Julio
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24188065.svg)](https://doi.org/10.5281/zenodo.24188065)
+![Licence: CC BY 4.0 (code MIT)](https://img.shields.io/badge/licence-CC%20BY%204.0%20%7C%20code%20MIT-blue)
+
 ## In plain words
 
 The Chen-LeBrun-Weber (CLW) metric is a special shape of a four-dimensional space: an Einstein metric, the kind of
