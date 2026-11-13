@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "A computer-assisted location of the Chen-LeBrun-Weber Einstein metric"
 authors:
-  - name: "Moki & Julio (AI-assisted)"
+  - name: "Moki & Julio"
 date-released: 2026-11-13
-version: "1.0"
+version: "1.0.1"
 repository-code: "https://github.com/Hashirama1337s/certified-chen-lebrun-weber"
 license: CC-BY-4.0
 keywords:

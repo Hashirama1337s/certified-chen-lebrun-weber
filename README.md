@@ -1,6 +1,6 @@
 # A computer-assisted location of the Chen-LeBrun-Weber Einstein metric
 
-Moki & Julio (AI-assisted)
+Moki & Julio
 
 ## In plain words
 
@@ -60,3 +60,7 @@ Text and data: CC BY 4.0 (`LICENSE`). Code in `code/`: MIT (`LICENSE-CODE`).
 ## Cite
 
 See `CITATION.cff`.
+
+---
+
+*Prepared with AI assistance; all results are machine-checked and listed in the scorecard (Section 6).*
