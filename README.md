@@ -1,4 +1,4 @@
-# A computer-assisted location of the Chen-LeBrun-Weber Einstein metric
+# A certified approximation of the Chen-LeBrun-Weber Einstein metric
 
 Moki & Julio
 
@@ -7,7 +7,7 @@ Moki & Julio
 The Chen-LeBrun-Weber (CLW) metric is a special shape of a four-dimensional space: an Einstein metric, the kind of
 geometry that solves Einstein's equations in empty space with a cosmological constant (a curved space with no time
 direction). It lives on the manifold
-$\mathbb{CP}^2\#2\overline{\mathbb{CP}^2}$. Its existence was proved in 2008, but nobody can write it down by a formula.
+$`\mathbb{CP}^2\#2\overline{\mathbb{CP}^2}`$. Its existence was proved in 2008, but nobody can write it down by a formula.
 
 We computed a very accurate approximate version of it on a computer. Then we used interval-style arithmetic (every
 number carries a guaranteed error bar) to prove that the true metric sits within a tiny, explicit distance of our
@@ -24,7 +24,7 @@ We also list every pre-registered test we ran on the way, including the 16 that 
 ## At a glance
 
 - **Certified location.** An explicit polynomial symplectic potential (the Guillemin potential plus a degree-84 correction)
-  for the extremal Kähler metric conformal to the Chen-LeBrun-Weber (CLW) Einstein metric on $\mathbb{CP}^2\#2\overline{\mathbb{CP}^2}$.
+  for the extremal Kähler metric conformal to the Chen-LeBrun-Weber (CLW) Einstein metric on $`\mathbb{CP}^2\#2\overline{\mathbb{CP}^2}`$.
   The true extremal metric lies within $\|\psi\|_{H^6}\le 7.568\times10^{-10}$ of it, for every class in the $a^*$ ball.
 - **Pointwise.** At the critical class, the CLW metric $h$ and the rescaled approximant satisfy
   $(1-d_h)\tilde h\le h\le(1+d_h)\tilde h$ with $d_h\le5.504\times10^{-8}$.

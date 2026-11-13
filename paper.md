@@ -1,4 +1,4 @@
-# A computer-assisted location of the Chen-LeBrun-Weber Einstein metric
+# A certified approximation of the Chen-LeBrun-Weber Einstein metric
 
 **Moki & Julio**
 
@@ -12,7 +12,7 @@ the lab's working files, most of which are not in this repository). Claim tags l
 > The Chen-LeBrun-Weber (CLW) metric is a special shape of a four-dimensional space: an Einstein metric, the kind of
 > geometry that solves Einstein's equations in empty space with a cosmological constant (a curved space with no time
 > direction). It lives on the manifold
-> $\mathbb{CP}^2\#2\overline{\mathbb{CP}^2}$. Its existence was proved in 2008, but nobody can write it down by a formula.
+> $`\mathbb{CP}^2\#2\overline{\mathbb{CP}^2}`$. Its existence was proved in 2008, but nobody can write it down by a formula.
 >
 > We computed a very accurate approximate version of it on a computer. Then we used interval-style arithmetic (every
 > number carries a guaranteed error bar) to prove that the true metric sits within a tiny, explicit distance of our
@@ -34,7 +34,7 @@ the lab's working files, most of which are not in this repository). Claim tags l
 $$p(a)=a^{10}+5a^9+6a^8-12a^7-34a^6-42a^5+20a^3+21a^2-7a-6,$$
 and let $a^*$ be its unique root in $(1,\infty)$ [C1]. The value $a^* = 1.95771280518776186068\ldots$ is carried in the
 computation as a FLINT-isolated ball of radius $1.5\times10^{-40}$ [C2]. Let $P=P(a^*)$ be the Delzant pentagon
-$[-1,1]^2\cap\{x_1+x_2\ge-\gamma\}$ with $\gamma=2/a^*$ [C3], and let $M=\mathbb{CP}^2\#2\overline{\mathbb{CP}^2}$ be the toric
+$[-1,1]^2\cap\{x_1+x_2\ge-\gamma\}$ with $\gamma=2/a^*$ [C3], and let $`M=\mathbb{CP}^2\#2\overline{\mathbb{CP}^2}`$ be the toric
 manifold it defines. Write $\tilde u=u_G+f_{84}$ for the computed symplectic potential: the Guillemin potential plus a
 degree-84 polynomial correction $f_{84}$ [C4]. Write $\tilde g=g_K(\tilde u)$ for its toric Kähler metric, $\tilde x$
 for its moment map, and $S$ for Donaldson's affine function of $P$. Sobolev norms $H^k$ are sum norms
@@ -62,7 +62,7 @@ The three inputs of Corollary 2 are:
 - criticality of $a^*$ on the full cone (Lemma G5, Section 2.6);
 - Li-Sun, arXiv:2610.10425v2, Cor. 7.3 and Prop. 7.13: a toric Einstein metric on this manifold is CLW up to scaling and
   isometry. **This is a preprint** [C11]. Independently, LeBrun's Theorem A (arXiv:1010.0238, p. 1) states that a compact
-  Hermitian Einstein metric on $\mathbb{CP}_2\#2\overline{\mathbb{CP}}_2$ is either Kähler-Einstein or a constant multiple of the
+  Hermitian Einstein metric on $`\mathbb{CP}_2\#2\overline{\mathbb{CP}}_2`$ is either Kähler-Einstein or a constant multiple of the
   CLW metric. The manifold carries no Kähler-Einstein metric (standard: by Matsushima's criterion its automorphism group is not reductive), and $h=S^{-2}g_\psi$ is Hermitian for $J$ and not Kähler (its
   conformal factor is non-constant), so the identification also follows from that theorem.
 
