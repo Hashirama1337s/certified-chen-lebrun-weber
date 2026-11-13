@@ -1,9 +1,13 @@
 # A certified approximation of the Chen-LeBrun-Weber Einstein metric
 
-Moki & Julio
+**The Chen-LeBrun-Weber metric, a solution of Einstein's equations known since 2008 only as an existence theorem, now has an explicit computed version and a proof that the true metric lies within about 5 parts in 100 million of it (conditional on cited results).**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24188065.svg)](https://doi.org/10.5281/zenodo.24188065)
-![Licence: CC BY 4.0 (code MIT)](https://img.shields.io/badge/licence-CC%20BY%204.0%20%7C%20code%20MIT-blue)
+[![DOI 10.5281/zenodo.24188065](brand/doi.svg)](https://doi.org/10.5281/zenodo.24188065) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
+
+Moki & Julio · 2026 · version 1.0
+
+**Read** [paper.md](paper.md) · **Re-run** [code/RUN.md](code/RUN.md) (the final certificate and the assembly, seconds) ·
+**Check** [data/SHA256SUMS-PROD-met6.txt](data/SHA256SUMS-PROD-met6.txt) and [MANIFEST.sha256](MANIFEST.sha256)
 
 ## In plain words
 
@@ -41,12 +45,20 @@ We also list every pre-registered test we ran on the way, including the 16 that 
   eigenvalue count.
 - **Honesty.** Every test was sealed before its run: 30 settled seals, 13 HOLD, 16 FAILED, 1 VOID.
 
-**Read** [paper.md](paper.md) · **Re-run** [code/RUN.md](code/RUN.md) (the final certificate and the assembly, seconds) ·
-**Check** [data/SHA256SUMS-PROD-met6.txt](data/SHA256SUMS-PROD-met6.txt) and [MANIFEST.sha256](MANIFEST.sha256)
-
 ![Scorecard of every settled sealed test](scorecard.svg)
 
-## What is in this repository
+## What we do not claim
+
+- The existence of the CLW metric is not new (Chen, LeBrun and Weber, 2008). New: the certified location, the method, and the eigenvalue count.
+- The proof is computer-assisted and conditional on the cited inputs listed in Section 7 of the paper.
+- The step that names the metric as CLW uses a preprint (Li-Sun), and one boundary-condition step is not yet fully sourced.
+- Of 30 settled sealed tests, 16 FAILED and 1 was VOID; all are in the scorecard.
+
+## Reproduce and reuse
+
+Commands, expected outputs and run times: [code/RUN.md](code/RUN.md) (the final certificate and the assembly take seconds). Hashes: [data/SHA256SUMS-PROD-met6.txt](data/SHA256SUMS-PROD-met6.txt) and [MANIFEST.sha256](MANIFEST.sha256).
+
+### What is in this repository
 
 - `paper.md`: the paper. `CLAIMS.md`: the source file and line of every number in it. `PRIOR-ART-CERT.md`: the prior-art search.
 - `data/`: the certificate (`cert_refined_a1.json`), the assembly result (`result_refined_a1.json`) and its log, the null
@@ -54,16 +66,23 @@ We also list every pre-registered test we ran on the way, including the 16 that 
   containment-control counts (`ctrl1/`).
 - `code/`: the production, certificate, assembly and control scripts, in the lab's folder layout (`seatE/`, `seatR/`,
   `seatG45/`, `seatB2/`, `seatX/`, `controls/`), with `RUN.md` and `PATCHES.md`.
-- `chips/`, `scorecard.svg`: the verdict badges used by the tables.
+- `chips/`, `brand/`, `scorecard.svg`: the verdict chips, badges and scorecard.
 
-## Licence
+## How to cite
 
+```
+Moki & Julio (2026). A certified approximation of the Chen-LeBrun-Weber Einstein metric. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.24188065
+```
+
+The DOI always resolves to the newest archived version. Version 1.0 is 10.5281/zenodo.24188066. Machine-readable: [CITATION.cff](CITATION.cff).
 Text and data: CC BY 4.0 (`LICENSE`). Code in `code/`: MIT (`LICENSE-CODE`).
 
-## Cite
+## Related projects
 
-See `CITATION.cff`.
+- [large-d-gregory-laflamme](https://github.com/Hashirama1337s/large-d-gregory-laflamme): the Gregory-Laflamme threshold of a black string as an exact large-dimension series
+- [airy-edge-hydrodynamics](https://github.com/Hashirama1337s/airy-edge-hydrodynamics): where the fluid series of a holographic plasma stops working, followed to large dimension
+- All projects: [the Moki & Julio lab map](https://github.com/Hashirama1337s)
 
 ---
 
-*Prepared with AI assistance; all results are machine-checked and listed in the scorecard (Section 6).*
+*Prepared with AI assistance; what was checked, and by what, is stated above.*
