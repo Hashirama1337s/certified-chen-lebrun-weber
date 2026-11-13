@@ -186,7 +186,7 @@ $`r=2\alpha_1\alpha_2/(1+\sqrt{1-x})`$ [C26].
 | 12 | self-map $`\alpha_2\alpha_1+\alpha_2\alpha_{3,Y}r^2\le r`$ | | PASS |
 | 13 | contraction $`2\alpha_2\alpha_{3,Y}r<1`$ | $`0.0929469`$ | PASS |
 | 14 | $`b=\sqrt2\,C_\infty r<1`$ ($`g_\psi`$ positive) | $`3.186\times10^{-8}`$ | PASS |
-Vert |Vert  Vert 1Vert 5Vert  Vert |Vert  Vert $Vert `Vert cVert ^Vert *Vert =Vert 0Vert `Vert $Vert :Vert  Vert $Vert `Vert \Vert |Vert GVert _Vert PVert ^Vert {Vert -Vert 1Vert }Vert \Vert |Vert \Vert |Vert \Vert DVert eVert lVert tVert aVert \Vert |Vert _Vert FVert <Vert 1Vert `Vert $Vert  Vert |Vert  Vert $Vert `Vert 2Vert .Vert 8Vert 5Vert 9Vert \Vert tVert iVert mVert eVert sVert 1Vert 0Vert ^Vert {Vert -Vert 7Vert }Vert `Vert $Vert  Vert |Vert  Vert PVert AVert SVert SVert  Vert |Vert 
+| 15 | $`c^*=0`$: $`\Vert G_P^{-1}\Vert \Vert \Delta\Vert _F<1`$ | $`2.859\times10^{-7}`$ | PASS |
 | 16 | $`d_{cx}\le d_{\rm target}=6.53\times10^{-3}`$ | $`3.186\times10^{-8}`$ | PASS |
 | 17 | $`d_{\rm sym}\le d_{\rm target}`$ | $`3.186\times10^{-8}`$ | PASS |
 | 18 | $`d_h\le d_{\rm target}`$ | $`5.504\times10^{-8}`$ | PASS |
