@@ -1,0 +1,68 @@
+==============================================================================================================
+assemble.py (seat B2)   label: NULL (must FAIL K14): lap_rho_L2 raised to 2e-11, above the budget. SAMPLED, NOT CERTIFIED (dry run): seatX M84 sampled sups, seatX3 G3.json Gauss norms, seatB2 donid.py floats; rho_H3 is a PLACEHOLDER
+INPUT STATUS: *** SAMPLED, NOT CERTIFIED: nothing below is a proof ***
+==============================================================================================================
+
+-- 0. input consistency
+   GATE mu > 0 (dP3 App. B hypothesis, K4): PASS  mu = 0.436582119089
+   GATE Rm >= 0 and (Rm = 0 only with mu > 0) (referee fix 1): PASS  Rm = 0
+   GATE mu <= Rp <= Rop (not provably violated): PASS  
+   GATE S_min > 0 (K2): PASS  S_min = 3.01095548969
+   GATE V <= (2 pi)^2 GP_diag[0]: PASS  V = 139.017997713
+sup|s|                     = 5.46136955748          | S_max + sup|rho| (referee fix 2)
+
+-- 1. C_reg = F(1,1,1)   [seatX/chain.py imported; NOTES-X-PROOFS sec. 7]
+  A_0 (bound of ||nabla^0 f||) = 0.135741099914         | chain.F at w = (1,1,1)
+  A_1 (bound of ||nabla^1 f||) = 0.285644715609         | chain.F at w = (1,1,1)
+  A_2 (bound of ||nabla^2 f||) = 0.601092105536         | chain.F at w = (1,1,1)
+  A_3 (bound of ||nabla^3 f||) = 2.66446828334          | chain.F at w = (1,1,1)
+  A_4 (bound of ||nabla^4 f||) = 16.7531005945          | chain.F at w = (1,1,1)
+  A_5 (bound of ||nabla^5 f||) = 153.954526849          | chain.F at w = (1,1,1)
+  A_6 (bound of ||nabla^6 f||) = 1821.82259438          | chain.F at w = (1,1,1)
+  B_0 (bound of ||nabla^0 Delta f||) = 0.601092105536         | chain.F at w = (1,1,1)
+  B_1 (bound of ||nabla^1 Delta f||) = 1.53679733250          | chain.F at w = (1,1,1)
+  B_2 (bound of ||nabla^2 Delta f||) = 3.92909176385          | chain.F at w = (1,1,1)
+  B_3 (bound of ||nabla^3 Delta f||) = 19.0492465373          | chain.F at w = (1,1,1)
+  B_4 (bound of ||nabla^4 Delta f||) = 141.593011018          | chain.F at w = (1,1,1)
+C_reg                      = 1996.21716803          | sum A_j; ||psi||_H6 <= C_reg ||L_t psi||_H2 on X (K8)
+   GATE C_reg finite: PASS  
+
+-- 2. Sobolev constants   [dP3 App. B as transcribed, from mu and V only; C12 not used]
+C5                         = 0.539814940026         | Cor. B.4, H^1 -> L^4
+C6                         = 1.61944482008          | Cor. B.4, H^{1,3} -> L^12
+C7                         = 6.57310305372          | Cor. B.4, H^{1,12} -> L^inf
+C8                         = 1.50865262383          | Prop. B.5, L^4 -> L^3
+C_inf                      = 34.6761393644          | 4 C7 C6 C8 C5, (B.7): ||T||_inf <= C_inf ||T||_H3 (Kato)
+C32                        = 35.8417400423          | C_inf + 4 C5^2, NOTES-Q2-PROOF Lemma A
+C9                         = 69.3522787288          | max{2 C_inf, C32, 8 C5^2}, (B.8) = NOTES-Q2-PROOF Lemma B
+
+-- 3. alpha1   [K10; Pi rho = 0 exactly by Donaldson, so ||rho||_Y = ||rho||_H2]
+||rho||_L2(M)              = 5.37514065720e-24      | certificate
+||grad rho||_L2            = 1.03683563376e-17      | sqrt(||rho|| ||Delta rho||)   (<Delta rho, rho> = ||grad rho||^2)
+||Hess rho||_L2            = 2.00000000000e-11      | sqrt(||Delta rho||^2 + Rm ||grad rho||^2)   (integrated Bochner, NOTES-X L2' at j = 0)
+alpha1 = ||rho||_H2        = 2.00000103684e-11      | sum of the three
+
+-- 4. alpha2   [NOTES-B2 sec. 1c]
+kappa_A + w'               = 3.89979156250          | norm equivalence ||y||_Y <= (kappa_A + w') ||y||_H2
+t                          = 2.79021884273e-10      | C_reg (kappa_A + w') C32 ||rho||_H3   (moment-map shift <d rho, d.>)
+   GATE t < 1 (K11): PASS  
+alpha2                     = 1996.21716859          | C_reg / (1 - t)
+
+-- 5. alpha3   [NOTES-Q2-PROOF Theorem: alpha3(r) = 4 C32 K(2r); alpha3_Y = (kappa_A + w') alpha3(r)]
+m_R                        = 7.45721597576          | Rop + 2 Rc_1 + Rc_2
+alpha3_Y(0)                = 5567.09201417          | (kappa_A + w') 4 C32 (m_R + 5/2)
+r_max                      = 4.49918466135e-8       | 1 / (2 alpha2 alpha3_Y(0)): no admissible radius exceeds it
+   GATE C9 . 2 r_max < 1: PASS  C9 s = 6.24057e-6
+alpha3_Y(r_max)            = 5567.16814336          | tail included
+alpha1 budget              = 1.12691224364e-11      | 1 / (4 alpha2^2 alpha3_Y(r_max)), lower end
+R_hat                      = 7.98487281386e-8       | 2 alpha1 alpha2 (a-priori radius at which alpha3 is evaluated)
+   GATE C9 . 2 R_hat < 1 (Theorem hypothesis): PASS  
+alpha3_Y(R_hat)            = 5567.22712460          | (kappa_A + w') 4 C32 K(2 R_hat)
+
+-- 6. closing   [dP3 Thm 4.1 form; NOTES-B2 K14-K15]
+x = 4 a1 a2^2 a3_Y         = 1.77478081110          | closing quantity, must be < 1 STRICT
+   GATE x < 1 (K14): FAIL  
+
+==============================================================================================================
+GATES: 9/10 pass.  VERDICT: NOT CLOSED   [inputs SAMPLED, NOT CERTIFIED: a dry run, not a proof]
+memcap: exit 1, peak 0.01 GB of 8.00 GB cap

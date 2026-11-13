@@ -1,0 +1,89 @@
+==============================================================================================================
+assemble.py (seat B2)   label: seatE production A (arb Chebyshev models, a* ball) + certify_b3 + production B
+INPUT STATUS: CERTIFIED constants
+==============================================================================================================
+
+-- 0. input consistency
+   GATE mu > 0 (dP3 App. B hypothesis, K4): PASS  mu = 0.483347103589
+   GATE Rm >= 0 and (Rm = 0 only with mu > 0) (referee fix 1): PASS  Rm = 0
+   GATE mu <= Rp <= Rop (not provably violated): PASS  
+   GATE S_min > 0 (K2): PASS  S_min = 3.00951670796
+   GATE V <= (2 pi)^2 GP_diag[0]: PASS  V = 139.017997713
+sup|s|                     = 5.46389842608          | S_max + sup|rho| (referee fix 2)
+
+-- 1. C_reg = F(1,1,1)   [seatX/chain.py imported; NOTES-X-PROOFS sec. 7]
+  A_0 (bound of ||nabla^0 f||) = 0.135741100601         | chain.F at w = (1,1,1)
+  A_1 (bound of ||nabla^1 f||) = 0.285647068577         | chain.F at w = (1,1,1)
+  A_2 (bound of ||nabla^2 f||) = 0.601102005402         | chain.F at w = (1,1,1)
+  A_3 (bound of ||nabla^3 f||) = 3.77240872964          | chain.F at w = (1,1,1)
+  A_4 (bound of ||nabla^4 f||) = 37.4748007528          | chain.F at w = (1,1,1)
+  A_5 (bound of ||nabla^5 f||) = 525.532522837          | chain.F at w = (1,1,1)
+  A_6 (bound of ||nabla^6 f||) = 9422.12623586          | chain.F at w = (1,1,1)
+  B_0 (bound of ||nabla^0 Delta f||) = 0.601102005402         | chain.F at w = (1,1,1)
+  B_1 (bound of ||nabla^1 Delta f||) = 1.53713657738          | chain.F at w = (1,1,1)
+  B_2 (bound of ||nabla^2 Delta f||) = 3.93076189447          | chain.F at w = (1,1,1)
+  B_3 (bound of ||nabla^3 Delta f||) = 26.9388966533          | chain.F at w = (1,1,1)
+  B_4 (bound of ||nabla^4 Delta f||) = 311.365636898          | chain.F at w = (1,1,1)
+C_reg                      = 9989.92845835          | sum A_j; ||psi||_H6 <= C_reg ||L_t psi||_H2 on X (K8)
+   GATE C_reg finite: PASS  
+
+-- 2. Sobolev constants   [dP3 App. B as transcribed, from mu and V only; C12 not used]
+C5                         = 0.513036556615         | Cor. B.4, H^1 -> L^4
+C6                         = 1.53910966985          | Cor. B.4, H^{1,3} -> L^12
+C7                         = 6.24703376457          | Cor. B.4, H^{1,12} -> L^inf
+C8                         = 1.50865262383          | Prop. B.5, L^4 -> L^3
+C_inf                      = 29.7674049667          | 4 C7 C6 C8 C5, (B.7): ||T||_inf <= C_inf ||T||_H3 (Kato)
+C32                        = 30.8202310004          | C_inf + 4 C5^2, NOTES-Q2-PROOF Lemma A
+C9                         = 59.5348099334          | max{2 C_inf, C32, 8 C5^2}, (B.8) = NOTES-Q2-PROOF Lemma B
+
+-- 3. alpha1   [K10; Pi rho = 0 exactly by Donaldson, so ||rho||_Y = ||rho||_H2]
+||rho||_L2(M)              = 1.52680900579e-16      | certificate
+||grad rho||_L2            = 3.23561216708e-15      | sqrt(||rho|| ||Delta rho||)   (<Delta rho, rho> = ||grad rho||^2)
+||Hess rho||_L2            = 6.85690617232e-14      | sqrt(||Delta rho||^2 + Rm ||grad rho||^2)   (integrated Bochner, NOTES-X L2' at j = 0)
+alpha1 = ||rho||_H2        = 7.19573547909e-14      | sum of the three
+
+-- 4. alpha2   [NOTES-B2 sec. 1c]
+kappa_A + w'               = 4.98350253655          | norm equivalence ||y||_Y <= (kappa_A + w') ||y||_H2
+t                          = 0.00385206247051       | C_reg (kappa_A + w') C32 ||rho||_H3   (moment-map shift <d rho, d.>)
+   GATE t < 1 (K11): PASS  
+alpha2                     = 10028.5590945          | C_reg / (1 - t)
+
+-- 5. alpha3   [NOTES-Q2-PROOF Theorem: alpha3(r) = 4 C32 K(2r); alpha3_Y = (kappa_A + w') alpha3(r)]
+m_R                        = 7.46678054669          | Rop + 2 Rc_1 + Rc_2
+alpha3_Y(0)                = 6123.29891267          | (kappa_A + w') 4 C32 (m_R + 5/2)
+r_max                      = 8.14227949480e-9       | 1 / (2 alpha2 alpha3_Y(0)): no admissible radius exceeds it
+   GATE C9 . 2 r_max < 1: PASS  C9 s = 9.69498e-7
+alpha3_Y(r_max)            = 6123.31192099          | tail included
+alpha1 budget              = 4.05953742741e-13      | 1 / (4 alpha2^2 alpha3_Y(r_max)), lower end
+R_hat                      = 1.44325716960e-9       | 2 alpha1 alpha2 (a-priori radius at which alpha3 is evaluated)
+   GATE C9 . 2 R_hat < 1 (Theorem hypothesis): PASS  
+alpha3_Y(R_hat)            = 6123.30121846          | (kappa_A + w') 4 C32 K(2 R_hat)
+
+-- 6. closing   [dP3 Thm 4.1 form; NOTES-B2 K14-K15]
+x = 4 a1 a2^2 a3_Y         = 0.177254749606         | closing quantity, must be < 1 STRICT
+   GATE x < 1 (K14): PASS  
+r                          = 7.56799693326e-10      | (1 - sqrt(1 - x)) / (2 alpha2 alpha3_Y) = 2 a1 a2 / (1 + sqrt(1 - x))
+   GATE r <= R_hat (alpha3 was evaluated on a larger ball): PASS  
+   GATE alpha2 alpha1 + alpha2 alpha3_Y r^2 <= r (ball mapped into itself): PASS  
+   GATE 2 alpha2 alpha3_Y r < 1 (contraction): PASS  = 0.0929469
+
+-- 7. ball inside the domain, c* = 0   [NOTES-B2 K16, K17]
+b = sqrt2 C_inf r          = 3.18593507364e-8       | |B|_op <= |B|_F / sqrt2 (J-commuting), ||nabla^2 psi||_inf <= C_inf r
+   GATE b < 1 (g_psi positive, K16): PASS  
+c* coefficient             = 377.744262757          | ||G_P^-1|| ||Delta||_F / r; |Delta_ji| <= sqrt(U_sup) C_inf r int_P|e_j|, int|x_a| <= sqrt(Area G_aa)
+c* margin                  = 2.85876742210e-7       | ||G_P^-1|| ||Delta||_F, must be < 1
+   GATE c* = 0: margin < 1 (K17): PASS  
+
+-- 8. pointwise metric bound   [NOTES-B2 sec. 5, K18]
+d_cx                       = 3.18593507364e-8       | complex gauge: (1 - d) g84 <= g_true <= (1 + d) g84, d = sqrt2 C_inf r
+m                          = 2.25279651902e-8       | sup |nabla_t^2 psi|_{g_t} <= C_inf r (1 + 3 C_inf r/(1-b)) / (1-b)
+d_sym                      = 3.18593544121e-8       | symplectic gauge (same (x, theta)): exp(sqrt2 m) - 1
+eta                        = 1.15886280722e-8       | |dS|_g~ C_inf r / S_min, |dS|_g~ <= |grad_x S| sqrt(U_sup) (referee fix 12)
+d_h (complex gauge)        = 5.50366080221e-8       | Einstein metrics c S^-2 g: (1 + d_cx)/(1 - eta)^2 - 1; symplectic gauge: d_sym
+   GATE d_cx <= d_target = 0.006530: PASS  
+   GATE d_sym <= d_target = 0.006530 (K18): PASS  
+   GATE d_h <= d_target = 0.006530: PASS  
+
+==============================================================================================================
+GATES: 18/18 pass.  VERDICT: ALL GATES HOLD
+memcap: exit 0, peak 0.01 GB of 8.00 GB cap

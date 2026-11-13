@@ -1,0 +1,17 @@
+MUT none case square deg 12 NG 7 cm from seatE/cm.py
+sub e0 [0,0.25]x[0,0.25]  build+quant 1s
+  s      rem 1.268e-15  max(|P-truth|_lower / rem) = 6.627e-05  violations 0/81
+  rho    rem 1.268e-15  max(|P-truth|_lower / rem) = 6.627e-05  violations 0/81
+  Riem2  rem 5.072e-15  max(|P-truth|_lower / rem) = 6.627e-05  violations 0/81
+  Ric2   rem 2.536e-15  max(|P-truth|_lower / rem) = 6.627e-05  violations 0/81
+  detA   rem 6.339e-16  max(|P-truth|_lower / rem) = 6.627e-05  violations 0/81
+  bounds(s) = [3.999999999995998, 4.000000000004002]  (square formula control sees only this)
+sub e0 [0.5,0.75]x[0.5,0.75]  build+quant 1s
+  s      rem 5.571e-12  max(|P-truth|_lower / rem) = 1.740e-03  violations 0/81
+  rho    rem 5.571e-12  max(|P-truth|_lower / rem) = 1.740e-03  violations 0/81
+  Riem2  rem 2.228e-11  max(|P-truth|_lower / rem) = 1.740e-03  violations 0/81
+  Ric2   rem 1.114e-11  max(|P-truth|_lower / rem) = 1.740e-03  violations 0/81
+  detA   rem 2.785e-12  max(|P-truth|_lower / rem) = 1.740e-03  violations 0/81
+  bounds(s) = [3.999999999990386, 4.000000000009614]  (square formula control sees only this)
+TOTAL violations 0 wall 3s
+memcap: exit 0, peak 0.41 GB of 8.00 GB cap

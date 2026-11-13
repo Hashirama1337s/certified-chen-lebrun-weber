@@ -1,0 +1,17 @@
+MUT noinvrem case square deg 28 NG 7 cm from controls/mut\cm.py
+sub e0 [0,0.25]x[0,0.25]  build+quant 7s
+  s      rem 6.016e-25  max(|P-truth|_lower / rem) = 1.371e+01  violations 68/81
+  rho    rem 6.016e-25  max(|P-truth|_lower / rem) = 1.371e+01  violations 68/81
+  Riem2  rem 2.406e-24  max(|P-truth|_lower / rem) = 1.371e+01  violations 68/81
+  Ric2   rem 1.203e-24  max(|P-truth|_lower / rem) = 1.371e+01  violations 68/81
+  detA   rem 3.008e-25  max(|P-truth|_lower / rem) = 1.371e+01  violations 68/81
+  bounds(s) = [3.999999999995999, 4.000000000004001]  (square formula control sees only this)
+sub e0 [0.5,0.75]x[0.5,0.75]  build+quant 8s
+  s      rem 7.344e-21  max(|P-truth|_lower / rem) = 1.084e+00  violations 2/81
+  rho    rem 7.344e-21  max(|P-truth|_lower / rem) = 1.084e+00  violations 2/81
+  Riem2  rem 2.938e-20  max(|P-truth|_lower / rem) = 1.084e+00  violations 2/81
+  Ric2   rem 1.469e-20  max(|P-truth|_lower / rem) = 1.084e+00  violations 2/81
+  detA   rem 3.672e-21  max(|P-truth|_lower / rem) = 1.084e+00  violations 2/81
+  bounds(s) = [3.999999999995999, 4.000000000004001]  (square formula control sees only this)
+TOTAL violations 350 wall 16s
+memcap: exit 0, peak 0.48 GB of 8.00 GB cap

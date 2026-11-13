@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="950" viewBox="0 0 760 950" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="760" height="950" rx="10" fill="#ffffff" stroke="#d9dbe8"/>
+<text x="20" y="34" font-size="18" font-weight="600" fill="#18192b">Scorecard: every settled sealed test (13 HOLD, 16 FAILED, 1 VOID)</text>
+<text x="20" y="54" font-size="12" fill="#555b74">Sealed = prediction and pass bar hashed before the run. Failures are shown as failures. Reasons: paper.md Sec. 6 and App. A.</text>
+<rect x="10" y="66" width="740" height="22" fill="#eef0fa"/>
+<text x="20" y="82" font-size="11.5" font-weight="600" fill="#3a3fa8" letter-spacing="0.5">MAIN TABLE: THE SEALED TESTS THE THEOREM CHAIN AND COROLLARY 3 USE</text>
+<text x="20" y="108" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWI (2df5647e52)</text>
+<text x="290" y="108" font-size="12" fill="#555b74">2026-11-11 21:57 UTC</text>
+<rect x="520" y="94" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="108" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="116" x2="750" y2="116" stroke="#eceef5"/>
+<text x="20" y="134" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWM (bba6649342)</text>
+<text x="290" y="134" font-size="12" fill="#555b74">2026-11-11 22:56 UTC</text>
+<rect x="520" y="120" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="134" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="142" x2="750" y2="142" stroke="#eceef5"/>
+<text x="20" y="160" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWN (2459207186)</text>
+<text x="290" y="160" font-size="12" fill="#555b74">2026-11-12 03:50 UTC</text>
+<rect x="520" y="146" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="160" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="168" x2="750" y2="168" stroke="#eceef5"/>
+<text x="20" y="186" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWT (0da760d766)</text>
+<text x="290" y="186" font-size="12" fill="#555b74">2026-11-12 09:14 UTC</text>
+<rect x="520" y="172" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="186" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="194" x2="750" y2="194" stroke="#eceef5"/>
+<text x="20" y="212" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">MET2 (92a48677ad)</text>
+<text x="290" y="212" font-size="12" fill="#555b74">2026-11-13 05:02 UTC</text>
+<rect x="520" y="198" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="212" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="220" x2="750" y2="220" stroke="#eceef5"/>
+<text x="20" y="238" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">MET3 (49a2fe684b)</text>
+<text x="290" y="238" font-size="12" fill="#555b74">2026-11-13 05:02 UTC</text>
+<rect x="520" y="224" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="238" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="246" x2="750" y2="246" stroke="#eceef5"/>
+<text x="20" y="264" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">MET4 (f58c422d19)</text>
+<text x="290" y="264" font-size="12" fill="#555b74">2026-11-13 05:02 UTC</text>
+<rect x="520" y="250" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="264" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="272" x2="750" y2="272" stroke="#eceef5"/>
+<text x="20" y="290" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">MET5 (ea72f3bc07)</text>
+<text x="290" y="290" font-size="12" fill="#555b74">2026-11-13 05:45 UTC</text>
+<rect x="520" y="276" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="290" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="298" x2="750" y2="298" stroke="#eceef5"/>
+<text x="20" y="316" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">MET6 (39be7ec448)</text>
+<text x="290" y="316" font-size="12" fill="#555b74">2026-11-13 06:00 UTC</text>
+<rect x="520" y="302" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="316" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="324" x2="750" y2="324" stroke="#eceef5"/>
+<rect x="10" y="330" width="740" height="22" fill="#eef0fa"/>
+<text x="20" y="346" font-size="11.5" font-weight="600" fill="#3a3fa8" letter-spacing="0.5">APPENDIX A: EVERY OTHER SETTLED SEAL IN THIS LINE OF WORK</text>
+<text x="20" y="372" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWB (c73ed2b2f4)</text>
+<text x="290" y="372" font-size="12" fill="#555b74">2026-11-11 18:16 UTC</text>
+<rect x="520" y="358" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="372" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="380" x2="750" y2="380" stroke="#eceef5"/>
+<text x="20" y="398" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWA (07e592fc36)</text>
+<text x="290" y="398" font-size="12" fill="#555b74">2026-11-11 18:59 UTC</text>
+<rect x="520" y="384" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="398" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="406" x2="750" y2="406" stroke="#eceef5"/>
+<text x="20" y="424" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">FAST (b757d923ad)</text>
+<text x="290" y="424" font-size="12" fill="#555b74">2026-11-11 19:17 UTC</text>
+<rect x="520" y="410" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="424" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="432" x2="750" y2="432" stroke="#eceef5"/>
+<text x="20" y="450" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWD (96ca1efcbb)</text>
+<text x="290" y="450" font-size="12" fill="#555b74">2026-11-11 19:28 UTC</text>
+<rect x="520" y="436" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="450" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="458" x2="750" y2="458" stroke="#eceef5"/>
+<text x="20" y="476" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWC (2583eeb9db)</text>
+<text x="290" y="476" font-size="12" fill="#555b74">2026-11-11 19:34 UTC</text>
+<rect x="520" y="462" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="476" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="484" x2="750" y2="484" stroke="#eceef5"/>
+<text x="20" y="502" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWE (2ab4b0de4f)</text>
+<text x="290" y="502" font-size="12" fill="#555b74">2026-11-11 20:41 UTC</text>
+<rect x="520" y="488" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="502" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="510" x2="750" y2="510" stroke="#eceef5"/>
+<text x="20" y="528" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWG (3806eb5d56)</text>
+<text x="290" y="528" font-size="12" fill="#555b74">2026-11-11 20:45 UTC</text>
+<rect x="520" y="514" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="528" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="536" x2="750" y2="536" stroke="#eceef5"/>
+<text x="20" y="554" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWH (0e9ba523a3)</text>
+<text x="290" y="554" font-size="12" fill="#555b74">2026-11-11 21:04 UTC</text>
+<rect x="520" y="540" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="554" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="562" x2="750" y2="562" stroke="#eceef5"/>
+<text x="20" y="580" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWJ (50b789e837)</text>
+<text x="290" y="580" font-size="12" fill="#555b74">2026-11-11 21:22 UTC</text>
+<rect x="520" y="566" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="580" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="588" x2="750" y2="588" stroke="#eceef5"/>
+<text x="20" y="606" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWF (afd8a15f2d)</text>
+<text x="290" y="606" font-size="12" fill="#555b74">2026-11-11 21:33 UTC</text>
+<rect x="520" y="592" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="606" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="614" x2="750" y2="614" stroke="#eceef5"/>
+<text x="20" y="632" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWK (4ee2fab868)</text>
+<text x="290" y="632" font-size="12" fill="#555b74">2026-11-11 22:02 UTC</text>
+<rect x="520" y="618" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="632" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="640" x2="750" y2="640" stroke="#eceef5"/>
+<text x="20" y="658" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWL (ce982a5a3f)</text>
+<text x="290" y="658" font-size="12" fill="#555b74">2026-11-11 22:22 UTC</text>
+<rect x="520" y="644" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="658" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="666" x2="750" y2="666" stroke="#eceef5"/>
+<text x="20" y="684" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CLWM (ac61aa9e3d)</text>
+<text x="290" y="684" font-size="12" fill="#555b74">2026-11-11 22:37 UTC</text>
+<rect x="520" y="670" width="46.4" height="19" rx="9.5" fill="#fbf0d4"/>
+<text x="529" y="684" font-size="11.5" font-weight="600" fill="#8a6100">VOID</text>
+<line x1="10" y1="692" x2="750" y2="692" stroke="#eceef5"/>
+<text x="20" y="710" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">MET1 (2e992a73d9)</text>
+<text x="290" y="710" font-size="12" fill="#555b74">2026-11-11 22:58 UTC</text>
+<rect x="520" y="696" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="710" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="718" x2="750" y2="718" stroke="#eceef5"/>
+<text x="20" y="736" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">GEO1 (5648789783)</text>
+<text x="290" y="736" font-size="12" fill="#555b74">2026-11-12 04:29 UTC</text>
+<rect x="520" y="722" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="736" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="744" x2="750" y2="744" stroke="#eceef5"/>
+<text x="20" y="762" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">GEO1B (032e1fd606)</text>
+<text x="290" y="762" font-size="12" fill="#555b74">2026-11-12 04:52 UTC</text>
+<rect x="520" y="748" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="762" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="770" x2="750" y2="770" stroke="#eceef5"/>
+<text x="20" y="788" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">TT0 (e4ed1591b2)</text>
+<text x="290" y="788" font-size="12" fill="#555b74">2026-11-12 04:59 UTC</text>
+<rect x="520" y="774" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="788" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="796" x2="750" y2="796" stroke="#eceef5"/>
+<text x="20" y="814" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">GEO2 (fa2546c325)</text>
+<text x="290" y="814" font-size="12" fill="#555b74">2026-11-12 05:17 UTC</text>
+<rect x="520" y="800" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="814" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="822" x2="750" y2="822" stroke="#eceef5"/>
+<text x="20" y="840" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">TT1P (7f0a75255d)</text>
+<text x="290" y="840" font-size="12" fill="#555b74">2026-11-12 05:35 UTC</text>
+<rect x="520" y="826" width="60.599999999999994" height="19" rx="9.5" fill="#fbe3e1"/>
+<text x="529" y="840" font-size="11.5" font-weight="600" fill="#b3322a">FAILED</text>
+<line x1="10" y1="848" x2="750" y2="848" stroke="#eceef5"/>
+<text x="20" y="866" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">LEDGER1 (dfbc1c5126)</text>
+<text x="290" y="866" font-size="12" fill="#555b74">2026-11-12 13:09 UTC</text>
+<rect x="520" y="852" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="866" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="874" x2="750" y2="874" stroke="#eceef5"/>
+<text x="20" y="892" font-size="12.5" font-family="Consolas, Menlo, monospace" fill="#18192b">CTRL1 (20c4a51c45)</text>
+<text x="290" y="892" font-size="12" fill="#555b74">2026-11-13 07:42 UTC</text>
+<rect x="520" y="878" width="46.4" height="19" rx="9.5" fill="#dff3e8"/>
+<text x="529" y="892" font-size="11.5" font-weight="600" fill="#1f7a4d">HOLD</text>
+<line x1="10" y1="900" x2="750" y2="900" stroke="#eceef5"/>
+<text x="20" y="936" font-size="11" fill="#555b74">Generated from the lab ledger settle records (paper Sec. 6). Moki &amp; Julio (AI-assisted).</text>
+</svg>

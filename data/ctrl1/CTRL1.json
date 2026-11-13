@@ -1,0 +1,491 @@
+{
+ "bar": "BAR-CTRL1",
+ "seal": "20c4a51c45",
+ "note": "raw counts only; scored by the lead",
+ "pinned_sha256": {
+  "cm.py": "8697432728c08f732418af0f17b4a3cc123096cbd796c2f9dad989c040542025",
+  "cmtoric.py": "b690368898de618d2e54a93a56005c6b7ed1c263025e6b4021ced0675fafb13f",
+  "arbrho.py": "add126b7bcc071db59f0aa35fc40c4f5e8b0c8e1a1dfcc07d1c34d1784909b2a",
+  "common.py": "2c558a5f8e43e739c694f4f24b39f01dd5b511e67a941e48de3006d4bbe113b2"
+ },
+ "mutated_copy": {
+  "path": "paper/release-work/ctrl1/mut/cm.py",
+  "sha256": "d703e8a4882797d2fafa74188e12dc5a31c5f5d7ef06631625f5fce7dfc47e87"
+ },
+ "scripts_sha256": {
+  "mkcopy.py": "4b6caebc4c156ddaca4391e7a72b4371a412ade07e54291d0918124f21e0c14a",
+  "cmcheck.py": "f580d2e3a4fc0c2378a1d140217dfcf0854842fa7583ae747e2115b95b0d3b5f",
+  "run_ctrl1.sh": "5ddc05c8069b7daece836071e8ab315f7152359f9be06101c9195635ab415c7e"
+ },
+ "items": {
+  "pos-square": {
+   "violations": 0,
+   "points_checked": 1620,
+   "runs": [
+    {
+     "file": "out_pos_square_d28.json",
+     "case": "square",
+     "deg": 28,
+     "mut": "none",
+     "violations": 0,
+     "max_ratio_P_minus_truth_over_rem": 0.21424313584071678,
+     "wall_s": 16.7,
+     "cm_file": "seatE\\cm.py",
+     "per_quantity": [
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "s",
+       "rem": 3.849773960272612e-23,
+       "max_ratio": 0.21424313584071678,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "rho",
+       "rem": 3.849773960272612e-23,
+       "max_ratio": 0.21424313584071678,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "Riem2",
+       "rem": 1.5399095841090449e-22,
+       "max_ratio": 0.21424313584071678,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "Ric2",
+       "rem": 7.699547920545224e-23,
+       "max_ratio": 0.21424313584071678,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "detA",
+       "rem": 1.924886980136306e-23,
+       "max_ratio": 0.21424313584071678,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "s",
+       "rem": 1.2495425815421121e-19,
+       "max_ratio": 0.06371088323566612,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "rho",
+       "rem": 1.2495425815421121e-19,
+       "max_ratio": 0.06371088323566612,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "Riem2",
+       "rem": 4.9981703261684485e-19,
+       "max_ratio": 0.06371088323566612,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "Ric2",
+       "rem": 2.4990851630842243e-19,
+       "max_ratio": 0.06371088323566612,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "detA",
+       "rem": 6.247712907710561e-20,
+       "max_ratio": 0.06371088323566612,
+       "violations": 0,
+       "points": 81
+      }
+     ],
+     "square_bounds_s": [
+      [
+       "e0 [0,0.25]x[0,0.25]",
+       3.999999999995999,
+       4.000000000004001
+      ],
+      [
+       "e0 [0.5,0.75]x[0.5,0.75]",
+       3.999999999995999,
+       4.000000000004001
+      ]
+     ]
+    },
+    {
+     "file": "out_pos_square_d12.json",
+     "case": "square",
+     "deg": 12,
+     "mut": "none",
+     "violations": 0,
+     "max_ratio_P_minus_truth_over_rem": 0.0017402356139914206,
+     "wall_s": 2.6,
+     "cm_file": "seatE\\cm.py",
+     "per_quantity": [
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "s",
+       "rem": 1.2678811711450361e-15,
+       "max_ratio": 6.626548410585736e-05,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "rho",
+       "rem": 1.2678811711450361e-15,
+       "max_ratio": 6.626548410585736e-05,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "Riem2",
+       "rem": 5.071524684580145e-15,
+       "max_ratio": 6.626548410585735e-05,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "Ric2",
+       "rem": 2.535762342290073e-15,
+       "max_ratio": 6.626548410585735e-05,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "detA",
+       "rem": 6.339405855725183e-16,
+       "max_ratio": 6.626548410585735e-05,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "s",
+       "rem": 5.57070240055618e-12,
+       "max_ratio": 0.0017402356139914206,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "rho",
+       "rem": 5.57070240055618e-12,
+       "max_ratio": 0.0017402356139914206,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "Riem2",
+       "rem": 2.22828096022593e-11,
+       "max_ratio": 0.0017402356139887211,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "Ric2",
+       "rem": 1.1141404801124048e-11,
+       "max_ratio": 0.0017402356139895963,
+       "violations": 0,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "detA",
+       "rem": 2.785351200281012e-12,
+       "max_ratio": 0.0017402356139895974,
+       "violations": 0,
+       "points": 81
+      }
+     ],
+     "square_bounds_s": [
+      [
+       "e0 [0,0.25]x[0,0.25]",
+       3.999999999995998,
+       4.000000000004002
+      ],
+      [
+       "e0 [0.5,0.75]x[0.5,0.75]",
+       3.999999999990386,
+       4.000000000009614
+      ]
+     ]
+    }
+   ]
+  },
+  "pos-clw": {
+   "violations": 0,
+   "points_checked": 98,
+   "runs": [
+    {
+     "file": "out_pos_clw_d28.json",
+     "case": "clw",
+     "deg": 28,
+     "mut": "none",
+     "violations": 0,
+     "max_ratio_P_minus_truth_over_rem": 0.01015248644359119,
+     "wall_s": 104.2,
+     "cm_file": "seatE\\cm.py",
+     "per_quantity": [
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "s",
+       "rem": 2.726396159202895e-18,
+       "max_ratio": 0.01015248644359119,
+       "violations": 0,
+       "points": 49
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "rho",
+       "rem": 2.726396159202895e-18,
+       "max_ratio": 0.01015248644359119,
+       "violations": 0,
+       "points": 49
+      }
+     ],
+     "square_bounds_s": []
+    }
+   ]
+  },
+  "neg-inv": {
+   "violations": 350,
+   "points_checked": 810,
+   "runs": [
+    {
+     "file": "out_neg_inv_d28.json",
+     "case": "square",
+     "deg": 28,
+     "mut": "noinvrem",
+     "violations": 350,
+     "max_ratio_P_minus_truth_over_rem": 13.710361082079771,
+     "wall_s": 16.1,
+     "cm_file": "paper\\release-work\\ctrl1\\mut\\cm.py",
+     "per_quantity": [
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "s",
+       "rem": 6.015798129523987e-25,
+       "max_ratio": 13.710361082079771,
+       "violations": 68,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "rho",
+       "rem": 6.015798129523987e-25,
+       "max_ratio": 13.710361082079771,
+       "violations": 68,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "Riem2",
+       "rem": 2.4063192518095947e-24,
+       "max_ratio": 13.710361082079771,
+       "violations": 68,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "Ric2",
+       "rem": 1.2031596259047974e-24,
+       "max_ratio": 13.710361082079771,
+       "violations": 68,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "detA",
+       "rem": 3.0078990647619934e-25,
+       "max_ratio": 13.710361082079771,
+       "violations": 68,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "s",
+       "rem": 7.344187582036109e-21,
+       "max_ratio": 1.0839791416187021,
+       "violations": 2,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "rho",
+       "rem": 7.344187582036109e-21,
+       "max_ratio": 1.0839791416187021,
+       "violations": 2,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "Riem2",
+       "rem": 2.9376750328144434e-20,
+       "max_ratio": 1.0839791416187021,
+       "violations": 2,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "Ric2",
+       "rem": 1.4688375164072217e-20,
+       "max_ratio": 1.0839791416187021,
+       "violations": 2,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "detA",
+       "rem": 3.672093791018054e-21,
+       "max_ratio": 1.0839791416187021,
+       "violations": 2,
+       "points": 81
+      }
+     ],
+     "square_bounds_s": [
+      [
+       "e0 [0,0.25]x[0,0.25]",
+       3.999999999995999,
+       4.000000000004001
+      ],
+      [
+       "e0 [0.5,0.75]x[0.5,0.75]",
+       3.999999999995999,
+       4.000000000004001
+      ]
+     ]
+    }
+   ]
+  },
+  "neg-tail": {
+   "violations": 810,
+   "points_checked": 810,
+   "runs": [
+    {
+     "file": "out_neg_tail_d12.json",
+     "case": "square",
+     "deg": 12,
+     "mut": "notail",
+     "violations": 810,
+     "max_ratio_P_minus_truth_over_rem": 19155.62101300057,
+     "wall_s": 2.4,
+     "cm_file": "paper\\release-work\\ctrl1\\mut\\cm.py",
+     "per_quantity": [
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "s",
+       "rem": 3.678072712231152e-23,
+       "max_ratio": 2284.2604311555842,
+       "violations": 81,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "rho",
+       "rem": 3.678072712231152e-23,
+       "max_ratio": 2284.2604311555842,
+       "violations": 81,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "Riem2",
+       "rem": 1.4712290848924608e-22,
+       "max_ratio": 2284.2604311555842,
+       "violations": 81,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "Ric2",
+       "rem": 7.356145424462304e-23,
+       "max_ratio": 2284.2604311555842,
+       "violations": 81,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0,0.25]x[0,0.25]",
+       "quantity": "detA",
+       "rem": 1.839036356115576e-23,
+       "max_ratio": 2284.2604311555842,
+       "violations": 81,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "s",
+       "rem": 5.060830294051024e-19,
+       "max_ratio": 19155.62101300057,
+       "violations": 81,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "rho",
+       "rem": 5.060830294051024e-19,
+       "max_ratio": 19155.62101300057,
+       "violations": 81,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "Riem2",
+       "rem": 2.0243321176204146e-18,
+       "max_ratio": 19155.621013000535,
+       "violations": 81,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "Ric2",
+       "rem": 1.0121660588102073e-18,
+       "max_ratio": 19155.621013000535,
+       "violations": 81,
+       "points": 81
+      },
+      {
+       "sub": "e0 [0.5,0.75]x[0.5,0.75]",
+       "quantity": "detA",
+       "rem": 2.5304151470255183e-19,
+       "max_ratio": 19155.621013000546,
+       "violations": 81,
+       "points": 81
+      }
+     ],
+     "square_bounds_s": [
+      [
+       "e0 [0,0.25]x[0,0.25]",
+       3.999999999995999,
+       4.000000000004001
+      ],
+      [
+       "e0 [0.5,0.75]x[0.5,0.75]",
+       3.9999999999959566,
+       4.000000000004043
+      ]
+     ]
+    }
+   ]
+  }
+ }
+}

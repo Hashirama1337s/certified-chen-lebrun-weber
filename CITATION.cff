@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A computer-assisted location of the Chen-LeBrun-Weber Einstein metric"
+authors:
+  - name: "Moki & Julio (AI-assisted)"
+date-released: 2026-11-13
+version: "1.0"
+repository-code: "https://github.com/Hashirama1337s/certified-chen-lebrun-weber"
+license: CC-BY-4.0
+keywords:
+  - Chen-LeBrun-Weber metric
+  - Einstein metric
+  - extremal Kähler metric
+  - Abreu equation
+  - computer-assisted proof
+  - interval arithmetic
+  - Newton-Kantorovich
+  - Laplace eigenvalues
+abstract: >-
+  A computer-assisted, interval-arithmetic location of the Chen-LeBrun-Weber Einstein metric on CP2#2(-CP2): an explicit
+  degree-84 polynomial potential with a certified H^6 radius of 7.568e-10 for the conformally related extremal Kähler metric
+  and a pointwise bound d_h <= 5.504e-8 for the Einstein metric, conditional on cited inputs (one a preprint). Corollary: exactly
+  one scalar Laplace eigenvalue in (0, 2 Lambda). Every sealed test, including 16 FAILED, is listed. Data and code included.

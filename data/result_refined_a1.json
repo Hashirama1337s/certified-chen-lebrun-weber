@@ -1,0 +1,101 @@
+{
+ "C_reg": "9989.9284583514775157",
+ "C5": "0.51303655661531524500",
+ "C6": "1.5391096698459457350",
+ "C7": "6.2470337645687749148",
+ "C8": "1.5086526238340821160",
+ "C_inf": "29.767404966680715299",
+ "C32": "30.820231000375513558",
+ "C9": "59.534809933361430598",
+ "alpha1": "7.1957354790866523601e-14",
+ "alpha2": "10028.559094472563015",
+ "m_R": "7.4667805466930677000",
+ "alpha3_Y_0": "6123.2989126744987676",
+ "alpha3_Y": "6123.3012184564625865",
+ "r_max": "8.1422794948033699246e-9",
+ "alpha1_budget": "4.0595374274135147595e-13",
+ "x": "0.17725474960624380611",
+ "r": "7.5679969332627151851e-10",
+ "c_star_margin": "2.8587674221046479479e-7",
+ "d_cx": "3.1859350736391274940e-8",
+ "d_sym": "3.1859354412097713810e-8",
+ "d_h": "5.5036608022109204886e-8",
+ "eta": "1.1588628072208338243e-8",
+ "t": "0.0038520624705076057950",
+ "gates": [
+  [
+   "mu > 0 (dP3 App. B hypothesis, K4)",
+   true
+  ],
+  [
+   "Rm >= 0 and (Rm = 0 only with mu > 0) (referee fix 1)",
+   true
+  ],
+  [
+   "mu <= Rp <= Rop (not provably violated)",
+   true
+  ],
+  [
+   "S_min > 0 (K2)",
+   true
+  ],
+  [
+   "V <= (2 pi)^2 GP_diag[0]",
+   true
+  ],
+  [
+   "C_reg finite",
+   true
+  ],
+  [
+   "t < 1 (K11)",
+   true
+  ],
+  [
+   "C9 . 2 r_max < 1",
+   true
+  ],
+  [
+   "C9 . 2 R_hat < 1 (Theorem hypothesis)",
+   true
+  ],
+  [
+   "x < 1 (K14)",
+   true
+  ],
+  [
+   "r <= R_hat (alpha3 was evaluated on a larger ball)",
+   true
+  ],
+  [
+   "alpha2 alpha1 + alpha2 alpha3_Y r^2 <= r (ball mapped into itself)",
+   true
+  ],
+  [
+   "2 alpha2 alpha3_Y r < 1 (contraction)",
+   true
+  ],
+  [
+   "b < 1 (g_psi positive, K16)",
+   true
+  ],
+  [
+   "c* = 0: margin < 1 (K17)",
+   true
+  ],
+  [
+   "d_cx <= d_target = 0.006530",
+   true
+  ],
+  [
+   "d_sym <= d_target = 0.006530 (K18)",
+   true
+  ],
+  [
+   "d_h <= d_target = 0.006530",
+   true
+  ]
+ ],
+ "all_gates": true,
+ "certified_inputs": true
+}
