@@ -26,6 +26,12 @@ The existence of the metric is not new. What is new is the certified location: a
 where the metric is. A second result follows from it: the CLW metric has exactly one scalar vibration mode below the
 threshold $`2\Lambda`$, where $`\Lambda`$ is the curvature constant of the space.
 
+![](brand/icon-picture.svg) **The idea in one picture.** A theorem can tell you that a mountain has a summit without telling you where it
+is. For this metric, that was the situation since 2008. We planted a flag and proved, relying on results we cite,
+that the true summit lies within a tiny, stated distance of the flag. **Where the picture breaks.** The "summit" is
+not a point but a whole curved four-dimensional shape, the distance is measured between two shapes at every point,
+and the proof leans on cited results, one of them a preprint.
+
 We also list every pre-registered test we ran on the way, including the 16 that failed.
 
 ## At a glance

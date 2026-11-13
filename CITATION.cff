@@ -17,7 +17,13 @@ keywords:
   - interval arithmetic
   - Newton-Kantorovich
   - Laplace eigenvalues
+  - general relativity
+  - differential geometry
+  - rigorous numerics
 abstract: >-
+  The Chen-LeBrun-Weber metric is a special shape of a four-dimensional space, of the kind that solves
+  Einstein's equations in empty space with a cosmological constant. Its existence was proved in 2008, but nobody
+  can write it down by a formula.
   A computer-assisted, interval-arithmetic location of the Chen-LeBrun-Weber Einstein metric on CP2#2(-CP2): an explicit
   degree-84 polynomial potential with a certified H^6 radius of 7.568e-10 for the conformally related extremal Kähler metric
   and a pointwise bound d_h <= 5.504e-8 for the Einstein metric, conditional on cited inputs (one a preprint). Corollary: exactly
