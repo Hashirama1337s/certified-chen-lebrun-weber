@@ -1,6 +1,6 @@
 # A certified approximation of the Chen-LeBrun-Weber Einstein metric
 
-**The Chen-LeBrun-Weber metric, a solution of Einstein's equations known since 2008 only as an existence theorem, now has an explicit computed version and a proof that the true metric lies within about 5 parts in 100 million of it (conditional on cited results).**
+**The Chen-LeBrun-Weber metric, a solution of Einstein's equations known since 2008 only as an existence theorem, now has an explicit computed version and a proof that the true metric lies within about 5.5 parts in 100 million of it (conditional on cited results).**
 
 [![DOI 10.5281/zenodo.24188065](brand/doi.svg)](https://doi.org/10.5281/zenodo.24188065) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
@@ -18,7 +18,7 @@ $`\mathbb{CP}^2\#2\overline{\mathbb{CP}^2}`$. Its existence was proved in 2008, 
 
 We computed a very accurate approximate version of it on a computer. Then we used interval-style arithmetic (every
 number carries a guaranteed error bar) to prove that the true metric sits within a tiny, explicit distance of our
-computed one. At every point, the two metrics differ by a factor of at most $`1 \pm 5.504\times10^{-8}`$ (about 5 parts
+computed one. At every point, the two metrics differ by a factor of at most $`1 \pm 5.504\times10^{-8}`$ (about 5.5 parts
 in 100 million). This proof assumes several published results that we cite (listed in Section 7 of the paper). One of them, the one
 that names the metric as CLW, is a preprint, and one boundary-condition step is not yet fully sourced.
 
