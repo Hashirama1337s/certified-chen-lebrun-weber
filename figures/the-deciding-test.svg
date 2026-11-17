@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="900pt" height="403.2pt" viewBox="0 0 900 403.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403.2 
+L 900 403.2 
+L 900 0 
+L 0 0 
+L 0 403.2 
+z
+" style="fill: none"/>
+  </g>
+  <g id="patch_2">
+   <path d="M 17.1 400.7808 
+L 882.9 400.7808 
+Q 896.4 400.7808 896.4 394.7328 
+L 896.4 8.4672 
+Q 896.4 2.4192 882.9 2.4192 
+L 17.1 2.4192 
+Q 3.6 2.4192 3.6 8.4672 
+L 3.6 394.7328 
+Q 3.6 400.7808 17.1 400.7808 
+z
+" style="fill: #1c2026; stroke: #2f353d; stroke-width: 1.5; stroke-linejoin: miter"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_3">
+    <path d="M 270 334.656 
+L 864 334.656 
+L 864 124.992 
+L 270 124.992 
+z
+" style="fill: #1c2026"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 270 334.656 
+L 270 124.992 
+" clip-path="url(#p3b6a6344ef)" style="fill: none; stroke: #22272e; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="mdcc9f300a3" d="M 0 0 
+L 0 3.5 
+" style="stroke: #9aa4ae; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mdcc9f300a3" x="270" y="334.656" style="fill: #9aa4ae; stroke: #9aa4ae; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 15px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #9aa4ae" x="270" y="352.57641" transform="rotate(-0 270 352.57641)">0.0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 393.75 334.656 
+L 393.75 124.992 
+" clip-path="url(#p3b6a6344ef)" style="fill: none; stroke: #22272e; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mdcc9f300a3" x="393.75" y="334.656" style="fill: #9aa4ae; stroke: #9aa4ae; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 15px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #9aa4ae" x="393.75" y="352.57641" transform="rotate(-0 393.75 352.57641)">0.5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 517.5 334.656 
+L 517.5 124.992 
+" clip-path="url(#p3b6a6344ef)" style="fill: none; stroke: #22272e; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mdcc9f300a3" x="517.5" y="334.656" style="fill: #9aa4ae; stroke: #9aa4ae; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 15px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #9aa4ae" x="517.5" y="352.57641" transform="rotate(-0 517.5 352.57641)">1.0</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 641.25 334.656 
+L 641.25 124.992 
+" clip-path="url(#p3b6a6344ef)" style="fill: none; stroke: #22272e; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mdcc9f300a3" x="641.25" y="334.656" style="fill: #9aa4ae; stroke: #9aa4ae; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 15px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #9aa4ae" x="641.25" y="352.57641" transform="rotate(-0 641.25 352.57641)">1.5</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 765 334.656 
+L 765 124.992 
+" clip-path="url(#p3b6a6344ef)" style="fill: none; stroke: #22272e; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mdcc9f300a3" x="765" y="334.656" style="fill: #9aa4ae; stroke: #9aa4ae; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 15px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #9aa4ae" x="765" y="352.57641" transform="rotate(-0 765 352.57641)">2.0</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 17px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #e8edf2" x="567" y="372.318461" transform="rotate(-0 567 372.318461)">closing quantity x</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_4">
+    <path d="M 270 209.664 
+L 313.870551 209.664 
+L 313.870551 169.344 
+L 270 169.344 
+z
+" clip-path="url(#p3b6a6344ef)" style="fill: #39ff14; opacity: 0.3; stroke: #39ff14; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 270 290.304 
+L 709.258251 290.304 
+L 709.258251 249.984 
+L 270 249.984 
+z
+" clip-path="url(#p3b6a6344ef)" style="fill: #d95926; opacity: 0.3; stroke: #d95926; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 517.5 334.656 
+L 517.5 124.992 
+" clip-path="url(#p3b6a6344ef)" style="fill: none; stroke: #e8edf2; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 270 334.656 
+L 864 334.656 
+" style="fill: none; stroke: #9aa4ae; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #39ff14" x="321.295551" y="193.385836" transform="rotate(-0 321.295551 193.385836)">x = 0.1773   PASS</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 14px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #e8edf2" transform="translate(168.138438 185.501422)">the certificate</text>
+    <text style="font-size: 14px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #e8edf2" transform="translate(151.614062 200.799703)">(certified inputs)</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #d95926" x="716.683251" y="274.025836" transform="rotate(-0 716.683251 274.025836)">x = 1.7748   FAIL</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 14px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #e8edf2" transform="translate(181.919688 258.318238)">null control</text>
+    <text style="font-size: 14px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #e8edf2" transform="translate(109.220313 273.46777)">(broken input, sampled</text>
+    <text style="font-size: 14px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; fill: #e8edf2" transform="translate(143.861562 289.039762)">dry run; must fail)</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 14px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #e8edf2" x="522.45" y="148.861043" transform="rotate(-0 522.45 148.861043)">must be below 1</text>
+   </g>
+  </g>
+  <g id="text_12">
+   <text style="font-weight: 700; font-size: 21px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #e8edf2" x="31.5" y="46.032656" transform="rotate(-0 31.5 46.032656)">The test that decides the proof</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 15px; font-family: 'Segoe UI', 'Helvetica', 'Arial', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #9aa4ae" x="31.5" y="74.624063" transform="rotate(-0 31.5 74.624063)">The proof closes only if one number, x, is below 1. A deliberately broken input must fail it.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3b6a6344ef">
+   <rect x="270" y="124.992" width="594" height="209.664"/>
+  </clipPath>
+ </defs>
+</svg>

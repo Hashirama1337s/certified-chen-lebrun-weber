@@ -4,7 +4,7 @@
 
 [![DOI 10.5281/zenodo.24188065](brand/doi.svg)](https://doi.org/10.5281/zenodo.24188065) ![Licence: text and data CC BY 4.0, code MIT](brand/licence.svg) [![Moki & Julio lab map](brand/lab.svg)](https://github.com/Hashirama1337s)
 
-Moki & Julio · 2026 · version 1.0
+Moki & Julio · 2026 · version 1.0.1
 
 **Read** [paper.md](paper.md) · **Re-run** [code/RUN.md](code/RUN.md) (the final certificate and the assembly, seconds) ·
 **Check** [data/SHA256SUMS-PROD-met6.txt](data/SHA256SUMS-PROD-met6.txt) and [MANIFEST.sha256](MANIFEST.sha256)
@@ -20,7 +20,12 @@ We computed a very accurate approximate version of it on a computer. Then we use
 number carries a guaranteed error bar) to prove that the true metric sits within a tiny, explicit distance of our
 computed one. At every point, the two metrics differ by a factor of at most $`1 \pm 5.504\times10^{-8}`$ (about 5.5 parts
 in 100 million). This proof assumes several published results that we cite (listed in Section 7 of the paper). One of them, the one
-that names the metric as CLW, is a preprint, and one boundary-condition step is not yet fully sourced.
+that names the metric as CLW, is a preprint. An earlier caveat about one boundary-condition step was withdrawn on 2026-11-17
+(Section 7, item 5 of the paper).
+
+![A pentagon divided into 80 patches, each coloured by a certified bound on how far the computed metric misses its equation; every patch is below 3.81 × 10⁻¹⁷](figures/checked-patch-by-patch.svg)
+
+*The computed metric, checked patch by patch. The space is drawn as a pentagon: each inside point stands for a doughnut surface (2-torus) of points in the 4-dimensional space, so covering the pentagon covers the whole space. The proof splits it into 80 patches; each colour is a certified upper bound on how far the scalar curvature of the computed metric misses the value its equation demands (log scale, lighter = larger). Every patch is below 3.81 × 10⁻¹⁷. From such bounds the proof concludes that the true CLW Einstein metric lies within a factor 1 ± 5.504 × 10⁻⁸ of the rescaled computed one at every point (conditional on the cited results, one of them a preprint).*
 
 The existence of the metric is not new. What is new is the certified location: an explicit, checkable statement of
 where the metric is. A second result follows from it: the CLW metric has exactly one scalar vibration mode below the
@@ -46,10 +51,15 @@ We also list every pre-registered test we ran on the way, including the 16 that 
 - **How.** A Newton-Kantorovich (contraction-mapping) argument for the fourth-order Abreu equation, closed with interval
   (Arb) arithmetic over the whole closed pentagon: $`x=0.177254749606<1`$, 18/18 gates.
 - **Conditions.** Computer-assisted, and conditional on the cited inputs listed in Section 7 of the paper. The step that
-  names the metric as CLW uses a preprint (Li-Sun), and one boundary-condition step is not yet fully sourced.
+  names the metric as CLW uses a preprint (Li-Sun). (Correction 2026-11-17: the boundary-condition step formerly listed as
+  not fully sourced is sourced; see paper.md Section 7, item 5.)
 - **Not new.** The existence of the CLW metric (Chen, LeBrun and Weber, 2008). New: the certified location, the method, and the
   eigenvalue count.
 - **Honesty.** Every test was sealed before its run: 30 settled seals, 13 HOLD, 16 FAILED, 1 VOID.
+
+![Two bars against the line x = 1: the certificate at x = 0.1773 passes; a deliberately broken null control at x = 1.7748 fails](figures/the-deciding-test.svg)
+
+*The test that decides the proof. The Newton-Kantorovich argument closes only if one number, x, is below 1. With the certified inputs, x = 0.1773 (pass; 18 of 18 gates hold). In the null control, one input is deliberately raised above its budget (sampled inputs, a dry run): x = 1.7748, and the proof correctly refuses to close.*
 
 ![Scorecard of every settled sealed test](scorecard.svg)
 
@@ -57,7 +67,7 @@ We also list every pre-registered test we ran on the way, including the 16 that 
 
 - The existence of the CLW metric is not new (Chen, LeBrun and Weber, 2008). New: the certified location, the method, and the eigenvalue count.
 - The proof is computer-assisted and conditional on the cited inputs listed in Section 7 of the paper.
-- The step that names the metric as CLW uses a preprint (Li-Sun), and one boundary-condition step is not yet fully sourced.
+- The step that names the metric as CLW uses a preprint (Li-Sun). (Correction 2026-11-17: the boundary-condition step formerly listed as not fully sourced is sourced; see paper.md Section 7, item 5.)
 - Of 30 settled sealed tests, 16 FAILED and 1 was VOID; all are in the scorecard.
 
 ## Reproduce and reuse
@@ -73,15 +83,41 @@ Commands, expected outputs and run times: [code/RUN.md](code/RUN.md) (the final 
 - `code/`: the production, certificate, assembly and control scripts, in the lab's folder layout (`seatE/`, `seatR/`,
   `seatG45/`, `seatB2/`, `seatX/`, `controls/`), with `RUN.md` and `PATCHES.md`.
 - `chips/`, `brand/`, `scorecard.svg`: the verdict chips, badges and scorecard.
+- `figures/`: the two README figures and `make_figures.py`, which redraws them from shipped files (`CAPTIONS.md`: captions and sources).
+
+## Open doors
+
+What this work leaves open, and what we noticed along the way but did not follow up, for anyone who wants to take the next step.
+
+- **How many downhill directions does the CLW metric have.** As a critical point of the Einstein-Hilbert action, the CLW
+  metric has "downhill" directions (negative modes, counted among traceless, divergence-free deformations). Biquard and
+  Ozuch (2023) proved there is at least one, Nifa (2026) gives explicit bounds that imply at least two, and numerical work
+  by D. Z. Liu (2026) finds exactly two. We found no proof that there are at most two. *Status:* open as far as our dated
+  search found (17 November 2026; arXiv, Zenodo, web search and the citers of the key papers: only lower bounds).
+  *Start here:* the certified location of the metric in this repository is the input such a count needs; our scalar
+  count (paper.md, Section 5) shows the method for scalars; our two attempts at the tensor count did not close and say
+  why (paper.md, Appendix A, rows TT0 and TT1P). *Ceiling:* the exact number of downhill directions of a metric that has
+  no formula.
+- **Hidden symmetry, or chaos.** Some special metrics (Kerr, for example) carry a hidden conserved quantity for free fall,
+  a quadratic Killing tensor. On our approximate metric we certified exactly four at two test points, the four that the
+  visible symmetries already give (Appendix A, row GEO2). A numerical run on the same approximate metric found most
+  sampled free-fall paths chaotic (93.75%), in a test scored FAILED as sealed because a control clause missed (Appendix A,
+  row GEO1). Neither is proved for the true metric: carrying the Killing-tensor count over needs a certificate about
+  2.5 × 10^5 times tighter, plus control of higher derivatives than the three we have. *Status:* open as far as our dated
+  search found (17 November 2026; arXiv, Zenodo and citer lists: no Killing-tensor or chaos statement for this metric).
+  *Start here:* paper.md Section 8 (what the transfer needs) and the certificate files in `data/`. *Ceiling:* a proof
+  that the geodesics of a non-explicit Einstein metric have, or lack, a hidden symmetry.
 
 ## How to cite
 
 ```
-Moki & Julio (2026). A certified approximation of the Chen-LeBrun-Weber Einstein metric. Version 1.0. Zenodo. https://doi.org/10.5281/zenodo.24188065
+Moki & Julio (2026). A certified approximation of the Chen-LeBrun-Weber Einstein metric. Version 1.0.1. Zenodo. https://doi.org/10.5281/zenodo.24188065
 ```
 
 The DOI always resolves to the newest archived version. Version 1.0 is 10.5281/zenodo.24188066. Machine-readable: [CITATION.cff](CITATION.cff).
 Text and data: CC BY 4.0 (`LICENSE`). Code in `code/`: MIT (`LICENSE-CODE`).
+
+v1.0.1: adds Open doors and figures; correction dated 2026-11-17 (a boundary-condition caveat withdrawn, see Section 7 item 5); no change to the certified results.
 
 ## Related projects
 

@@ -50,3 +50,9 @@ shipped for the record.
 `data/SHA256SUMS-PROD-met6.txt` is the lab's list (paths relative to the lab folder `seatE/`, i.e. `code/seatE/` here).
 Files under `code/` match it except the path-line patches in `PATCHES.md` (check with `sha256sum -c MANIFEST.sha256` from the repository root). `data/prod_inputs.sha256` covers `data/prodA3/`
 and `data/prodB1/` (run `sha256sum -c prod_inputs.sha256` from `data/`).
+
+## Figures (optional)
+
+The two README figures are drawn from shipped files only: `python figures/make_figures.py .` from the repository root
+(Python 3.11, matplotlib 3.11; seconds). It rewrites `figures/*.svg`; two runs give byte-identical SVGs. Captions and
+the source of every printed number: `figures/CAPTIONS.md`.

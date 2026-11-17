@@ -26,7 +26,7 @@ Values were copied, not recomputed, except for the hashes in C69 (computed with 
 | C18 | complex gauge g_psi, x_psi, slice X, map G, DG(0), L_t, E | seatB2/NOTES-B2.md:17-29, 14 |
 | C19 | Y-norm, w' = 2^-10, \|\|Bo^-1\|\| <= C_reg, kappa_A = 1 + k1 + k2, norm equivalence | seatB2/NOTES-B2.md:37-46, 64 |
 | C20 | Pi rho = 0 exactly, so alpha1 = \|\|rho\|\|_H2 | seatB2/NOTES-B2.md:51-52 |
-| C21 | Donaldson primary source opened, VERDICT MATCH (factor 2, lattice measure); Abreu Thm 2.8 opened; face-convexity caveat | CITATIONS-ABREU-DONALDSON.md:16-18, 35-39, 57-58, 61-62 |
+| C21 | Donaldson primary source opened, VERDICT MATCH (factor 2, lattice measure); Abreu Thm 2.8 opened; face-convexity caveat WITHDRAWN (Correction 2026-11-17): stated in Apostolov arXiv:2208.12493v1 Prop. 2.2 pp.35-36 (no proof there); derived from Abreu Thm 2.8 determinant condition (paper.md §7.5) | CITATIONS-ABREU-DONALDSON.md:16-18, 35-39, 57-58, 61-62; open-doors/checked/CORRECTIONS.md item 1 (lab folder EDU-GITHUB/, with CORRECTIONS-REVIEW.md and CORRECTIONS-LINK.md) |
 | C22 | numerical check of Donaldson's identity (strong form; floors to 1e-59 / 1e-70; negative controls 7.02, 14.85 vs 14.04) | seatB2/NOTES-B2.md:102-116 |
 | C23 | c* = 0 argument and margin criterion | seatB2/NOTES-B2.md:66-80 |
 | C24 | NK used as plain contraction mapping; dP3 Thm 4.1 not load-bearing | seatB2/PROOF-ERRATA.md:82-85 |
@@ -64,7 +64,7 @@ Values were copied, not recomputed, except for the hashes in C69 (computed with 
 | C55 | refine list: 9 sub-squares, shares 64.53% ... 0.51%; criterion > 0.5% | seatE/logs/refine/list.log:1-9; BAR-MET5.md:6-10, 26 |
 | C56 | refinement times 458-569 s per parent; START 05:27:06Z, done 05:44:41Z; e3[3,3] lap2 1.525e-25 -> 2.229e-29 | seatE/logs/refine/status.log:1-15 |
 | C57 | children tile parents exactly; vol unchanged; merge conservative | REFEREE-MET5.md:40-50; seatE/logs/refine/status.log:4-12 |
-| C58 | final certificate: rho_L2 1.5268090057929563e-16, lap_rho_L2 6.856906172320414e-14, rho_H3 2.5105008366062487e-09, mu 0.48334710358870586, detm_inf 0.99892, Gjac_inf 0.24960, vol_sum and V balls | seatE/cert_refined_a1.json:3, 46-48, 53, 56, 62-63 |
+| C58 | final certificate: rho_L2 1.5268090057929563e-16, lap_rho_L2 6.856906172320414e-14, rho_H3 2.5105008366062487e-09, mu 0.48334710358870586, detm_inf 0.99891, m11_inf 0.998866, m22_inf 0.998866, Gjac_inf 0.24960, vol_sum and V balls | seatE/cert_refined_a1.json:3, 46-48, 53-56, 62-63 |
 | C59 | MET6: lambda1 rounded down, x = 0.177254749606, 18/18; null x = 1.775 fails K14 | LEDGER:308; BAR-MET6.md:4-13; A6:63, 88 |
 | C60 | CLWM and CLWN HOLD on M30 (invariant sector; \|n\|^2 <= 2); numbers in the scorecard | LEDGER:218, 226 |
 | C61 | methods: exact M/D polynomials (degrees 33, 61) + certified degree-16 surrogate (eps 5e-4); CR separator, C_CR(K) <= 0.1893 h_K (Liu 2024 Table 4.1); strip lemma; Lehmann-Maehly in strong form, no Goerisch dual space | seatM/NOTES-M.md:22-25, 36, 42-47, 97-103; REFEREE-CLWM.md:23-48; LEDGER:218 |

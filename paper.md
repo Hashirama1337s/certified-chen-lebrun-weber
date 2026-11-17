@@ -2,7 +2,7 @@
 
 **Moki & Julio**
 
-Version 1.0. Every number below is listed with its source file and line in `CLAIMS.md` (same folder; those sources are
+Version 1.0.1. Every number below is listed with its source file and line in `CLAIMS.md` (same folder; those sources are
 the lab's working files, most of which are not in this repository). Claim tags like [C12] point to rows of that file.
 
 ---
@@ -18,7 +18,8 @@ the lab's working files, most of which are not in this repository). Claim tags l
 > number carries a guaranteed error bar) to prove that the true metric sits within a tiny, explicit distance of our
 > computed one. At every point, the two metrics differ by a factor of at most $`1 \pm 5.504\times10^{-8}`$ (about 5 parts
 > in 100 million). This proof assumes several published results that we cite (listed in Section 7). One of them, the one
-> that names the metric as CLW, is a preprint, and one boundary-condition step is not yet fully sourced.
+> that names the metric as CLW, is a preprint. An earlier caveat about one boundary-condition step was withdrawn on
+> 2026-11-17 (Section 7, item 5).
 >
 > The existence of the metric is not new. What is new is the certified location: an explicit, checkable statement of
 > where the metric is. A second result follows from it: the CLW metric has exactly one scalar vibration mode below the
@@ -259,6 +260,10 @@ $`\mathrm{grad}\,\mathcal A=(-2.18,-2.18,2.88)\times10^{-87}`$ at truncation lev
 The constants are certified on 80 sub-squares covering the closed pentagon: 5 vertex elements, each with 16 sub-squares of
 side 1/4, in polar, Cartesian-vertex, rod or symplectic charts [C44].
 
+![A pentagon divided into 80 patches, each coloured by a certified bound on how far the computed metric misses its equation; every patch is below 3.81 × 10⁻¹⁷](figures/checked-patch-by-patch.svg)
+
+*The computed metric, checked patch by patch. The space is drawn as a pentagon: each inside point stands for a doughnut surface (2-torus) of points in the 4-dimensional space, so covering the pentagon covers the whole space. The proof splits it into 80 patches; each colour is a certified upper bound on how far the scalar curvature of the computed metric misses the value its equation demands (log scale, lighter = larger). Every patch is below 3.81 × 10⁻¹⁷. From such bounds the proof concludes that the true CLW Einstein metric lies within a factor 1 ± 5.504 × 10⁻⁸ of the rescaled computed one at every point (conditional on the cited results, one of them a preprint).*
+
 - **Part A, scalar layer (arb Chebyshev models).** Bivariate Chebyshev models with arb coefficients, degree 28, 192 bits. Each
   product is one ball-polynomial multiplication. Truncation tails go into one sup remainder. Inverses are validated a
   posteriori ($`\delta=\|1-qF\|<1/2`$). $`f_{84}`$ is expanded exactly, and the $`a^*`$ ball is carried natively. This layer gives
@@ -306,11 +311,15 @@ side 1/4, in polar, Cartesian-vertex, rod or symplectic charts [C44].
 - **Final certificate:**
   - $`\|\rho\|_{L^2}\le1.527\times10^{-16}`$, $`\|\Delta\rho\|_{L^2}\le6.857\times10^{-14}`$, $`\|\rho\|_{H^3}\le2.511\times10^{-9}`$;
   - $`\mu\ge0.48334`$;
-  - $`\det m\ge0.99891`$ and Jacobian $`\ge0.24960`$ (admissibility) [C58];
+  - $`\det m\ge0.99891`$ and Jacobian $`\ge0.24960`$ (admissibility: Abreu's boundary condition for $`\tilde u`$, Section 7 item 5) [C58];
   - the volume pieces sum to $`[139.017997713132\pm1.93\times10^{-13}]`$ against
     $`V=[139.017997713132\pm1.49\times10^{-13}]`$ [C58].
 - **After the referee's $`\lambda_1`$ fix (MET6):** the input had been rounded up, and is now rounded down to 7.36696546272.
   The assembly gives $`x=0.177254749606`$ and 18/18 gates [C59].
+
+![Two bars against the line x = 1: the certificate at x = 0.1773 passes; a deliberately broken null control at x = 1.7748 fails](figures/the-deciding-test.svg)
+
+*The test that decides the proof. The Newton-Kantorovich argument closes only if one number, x, is below 1. With the certified inputs, x = 0.1773 (pass; 18 of 18 gates hold). In the null control, one input is deliberately raised above its budget (sampled inputs, a dry run): x = 1.7748, and the proof correctly refuses to close.*
 
 The assembly itself takes seconds (memory peak 0.01 GB) [C30].
 
@@ -394,8 +403,28 @@ These are the inputs that this paper cites rather than proves or re-derives, as 
    opened and matches the lab's normalisation (factor 2, lattice measure) [C21]. Caveat: that is the arXiv version, not the
    published one.
 5. **Abreu/Guillemin boundary class** of the symplectic potential of a smooth toric Kähler metric. Abreu arXiv:math/0004122
-   Thm 2.8 has now been opened [C21]. A gap remains: Donaldson's class also asks for strict convexity on each face. That is
-   plausible from Abreu's determinant condition, but neither paper states it.
+   Thm 2.8 has been opened [C21]. *Correction 2026-11-17:* the earlier text said that a gap remained, namely that Donaldson's
+   class also asks for strict convexity on each face and that "neither paper states it". That is true of Abreu's and
+   Donaldson's papers, but the step is not a gap. Apostolov's lecture notes (arXiv:2208.12493v1, Ch. 2, Prop. 2.2,
+   pp. 35-36, attributed there to Donaldson, Collect. Math. 56 (2005)) state that the potentials of globally defined toric
+   Kähler metrics on a compact toric manifold are exactly the convex continuous $`u`$ whose "restriction ... to the interior
+   of any face of Δ (including Δ⁰) is a smooth strictly convex function" with $`u-\tfrac12\sum_j L_j\log L_j`$ smooth on
+   $`\Delta`$. The notes give no proof. The condition also follows from Abreu's Thm 2.8 (our derivation, checked by two
+   referees): near a point of the relative interior of the edge $`\{\ell_r=0\}`$, take affine coordinates $`x=\ell_r`$ and
+   $`t`$ along the edge; then $`u=\tfrac12x\log x+f`$ with $`f=h+\tfrac12\sum_{s\ne r}\ell_s\log\ell_s`$ smooth up to the
+   edge, the restriction of $`u`$ to the edge is $`f(0,t)`$, and
+   $`f_{tt}(0,t)=\lim_{x\to0}2x\det\mathrm{Hess}\,u=2/(\delta\prod_{s\ne r}\ell_s)|_{x=0}>0`$. So $`u`$ is smooth and
+   strictly convex on the relative interior of each edge. We credit Apostolov's notes for the explicit statement.
+   The identity is used for two potentials. For the true potential $`u^*`$ ($`c^*=0`$) the face condition follows from
+   Abreu's Thm 2.8 (cited) by the derivation above. For the computed potential $`\tilde u=u_G+f_{84}`$ ($`\Pi\rho=0`$,
+   Section 3.1) membership is certified rather than cited. $`h=f_{84}`$ is a polynomial. In each vertex chart
+   $`y=(\ell_a,\ell_b)`$, $`\mathrm{Hess}_y\tilde u=\mathrm{diag}(2y_1,2y_2)^{-1}m`$ with $`m`$ smooth up to the boundary,
+   and the certificate gives $`m_{11},m_{22}\ge0.998866`$ and $`\det m\ge0.998919`$ on all 80 closed sub-squares, for every
+   class in the $`a^*`$ ball (`data/cert_refined_a1.json` l.52-56). Hence $`\mathrm{Hess}\,\tilde u>0`$ inside. Abreu's
+   $`\delta=4/(\det m\prod_{r\ne a,b}\ell_r)`$ is smooth and positive on the closed $`P`$. The second derivative of
+   $`\tilde u`$ along the relative interior of the edge $`\{\ell_a=0\}`$ is $`m_{22}/(2\ell_b)>0`$ (and $`m_{11}/(2\ell_a)`$
+   on $`\{\ell_b=0\}`$), which is Donaldson's face condition directly. Abreu's converse direction (same theorem) makes
+   $`\tilde g`$ a smooth metric on $`M`$.
 6. **Elliptic bootstrap** (smoothness of $`\psi^*`$) and **Fredholm/onto** for $`L_t`$. These are textbook results, not opened.
 7. **Li-Sun** Cor. 7.3 / Prop. 7.13, arXiv:2610.10425v2: a preprint. It is used only to name the Einstein metric as CLW.
 8. **LeBrun, Crelle 678 (2013), Prop. 3**. OPENED, at lines 546-549 of the text.
@@ -478,6 +507,24 @@ The null certificate `data/cert_null.json` must fail gate 10 ($`x=1.775`$) [C59]
 
 ---
 
+## 10. Open doors
+
+What this work leaves open, and what we noticed and did not follow up. "Open as far as our dated search found" reports our
+own prior-art search.
+
+- **The TT index of CLW.** All rigorous statements are lower bounds: instability (Biquard-Ozuch, arXiv:2310.10109, p. 2
+  after Thm A), and two TT eigenvalues below 7Λ/6 (Nifa, Zenodo 22851442, abstract). D. Z. Liu (Zenodo 23598158) finds
+  numerically exactly two negative modes. No upper bound on the TT index was found. Our tensor separators (TT0, TT1P,
+  Appendix A) did not close under our memory budget; the certified metric of Theorem 1 is the input a certified count
+  needs. *Status:* open as far as our dated search found (2026-11-17; arXiv, Zenodo, web, citers of Biquard-Ozuch).
+- **Killing tensors and geodesic chaos on the true metric.** GEO2 certifies exactly 4 quadratic Killing tensors on the M84
+  approximant at two points; GEO1 (FAILED as sealed on a control clause) finds 93.75% of sampled geodesics chaotic on the
+  approximant (numerical). The transfer to the true metric needs a certified 7-jet within 10^-8 at the test point, i.e.
+  r ≲ 3 × 10^-15 [C67], and an interior bootstrap beyond C^3 [C68]. *Status:* open as far as our dated search found
+  (2026-11-17; arXiv, Zenodo, citer lists).
+
+---
+
 ## Appendix A: every other settled seal in this line of work
 
 Generated by `make_scorecard.py` (same source and order as Section 6).
@@ -511,6 +558,7 @@ Generated by `make_scorecard.py` (same source and order as Section 6).
 ## References (opened unless marked)
 - X. Chen, C. LeBrun, B. Weber, "On conformally Kähler, Einstein manifolds", arXiv:0705.0710v2 (opened; published 2008, journal
   venue not checked here).
+- O. Biquard, T. Ozuch, "Instability of conformally Kähler, Einstein metrics", arXiv:2310.10109, p. 2 after Thm A (opened).
 - C. LeBrun, "Einstein manifolds and extremal Kähler metrics", J. Reine Angew. Math. 678 (2013), DOI 10.1515/crelle.2012.006,
   arXiv:1009.1270, pp. 69-94. Prop. 3 opened (text l.546-549). Title, journal, issue, year and DOI were verified against the
   Crossref record and the arXiv abstract page; the page range against the zbMATH record (Zbl 1277.53042).
@@ -522,6 +570,8 @@ Generated by `make_scorecard.py` (same source and order as Section 6).
 - R. S. Bunch, S. K. Donaldson, arXiv:0803.0987, Sec. 1 p.1-2 (opened).
 - S. K. Donaldson, arXiv:math/0407486v2 (Collect. Math. 56 (2005) 103-142), Cor. 1, Prop. 1, Def. 1 (opened).
 - M. Abreu, arXiv:math/0004122v1, Thm 2.8 (opened).
+- V. Apostolov, "The Kähler geometry of toric manifolds", arXiv:2208.12493v1 (lecture notes, 2022), Ch. 2, Prop. 2.2,
+  pp. 35-36 (opened; no proof given there).
 - Hall-Haslhofer-Siepmann, arXiv:1111.4981, Lemma 7.3 (opened). Hall-Murphy, arXiv:1206.5489 Thm 1.1 and arXiv:1407.1272v2
   (opened).
 - T. J. Rivlin, *The Chebyshev Polynomials*, 2nd ed., Wiley 1990, Sec. 1.3, eq. (1.38) (opened).
